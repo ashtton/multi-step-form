@@ -1,0 +1,31 @@
+body {
+    font-family: Ubuntu, serif;
+    background-color: hsl(231, 100%, 99%);
+    margin: 0
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 2rem;
+    color: hsl(213, 96%, 18%);
+}
+
+.subtitle {
+    color: hsl(231, 11%, 63%);
+    margin-top: 0.7rem;
+    opacity: 50%;
+    margin-bottom: 2rem;
+}
