@@ -154,6 +154,7 @@
         .next-step {
             position: absolute;
             right: 1rem;
+            bottom: 1rem;
         }
     }
 </style>
