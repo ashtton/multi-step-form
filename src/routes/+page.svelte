@@ -68,13 +68,15 @@
     }
 
     .container {
+        margin-top: 3rem;
         padding: 1rem;
         border-radius: 1rem;
         background-color: hsl(0, 0%, 100%);
         display: flex;
         max-width: 900px;
         min-width: 900px;
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
         box-shadow: 0 15px 10px -15px hsl(229, 24%, 87%);
     }
 
