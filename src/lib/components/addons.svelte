@@ -33,7 +33,7 @@
 <div class="subtitle">Add-ons help enhance your gaming experience.</div>
 
 <div class="addons">
-    <a class="addon {addons.includes('multiplayer') ? 'addon-selected' : ''}" href="/static" on:click={() => toggle("multiplayer")}>
+    <a class="addon {addons.includes('multiplayer') ? 'addon-selected' : ''}" href="/" on:click={(e) => {toggle("multiplayer"); e.preventDefault()}}>
         <span class="addon-content">
             <span class="checkbox"><img alt="checkmark" src="/images/icon-checkmark.svg"></span>
             <span>
@@ -45,7 +45,7 @@
             +{$storedYearly ? "$10/yr" : "$1/mo"}
         </span>
     </a>
-    <a class="addon {addons.includes('storage') ? 'addon-selected' : ''}" href="/static" on:click={() => toggle("storage")}>
+    <a class="addon {addons.includes('storage') ? 'addon-selected' : ''}" href="/" on:click={(e) => {toggle("storage"); e.preventDefault()}}>
         <span class="addon-content">
             <span class="checkbox"><img alt="checkmark"  src="/images/icon-checkmark.svg"></span>
             <span>
@@ -57,7 +57,7 @@
             +{$storedYearly ? "$20/yr" : "$2/mo"}
         </span>
     </a>
-    <a class="addon {addons.includes('profile') ? 'addon-selected' : ''}" href="/static" on:click={() => toggle("profile")}>
+    <a class="addon {addons.includes('profile') ? 'addon-selected' : ''}" href="/" on:click={(e) => {toggle("profile"); e.preventDefault()}}>
         <span class="addon-content">
             <span class="checkbox"><img alt="checkmark" src="/images/icon-checkmark.svg"></span>
             <span>

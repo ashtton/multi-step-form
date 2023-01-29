@@ -23,7 +23,7 @@
 <div class="subtitle">You have the option of monthly or yearly billing.</div>
 
 <div class="plans">
-    <a class="plan {selected === 'arcade' ? 'plan-selected' : ''}" id="arcade" href="/static" on:click={() => selected = "arcade"}>
+    <a class="plan {selected === 'arcade' ? 'plan-selected' : ''}" id="arcade" href="/" on:click={(e) => {e.preventDefault();  selected = "arcade"}}>
         <img class="plan-image" src="/images/icon-arcade.svg"><br>
         <span>
             <span class="plan-title"><strong>Arcade</strong></span><br>
@@ -31,7 +31,7 @@
             <span class="free" hidden="{!yearly ? 'until-found' : ''}">2 months free</span>
         </span>
     </a>
-    <a class="plan {selected === 'advanced' ? 'plan-selected' : ''}" id="advanced" href="/static" on:click={() => selected = "advanced"}>
+    <a class="plan {selected === 'advanced' ? 'plan-selected' : ''}" id="advanced" href="/" on:click={(e) => {e.preventDefault();  selected = "advanced"}}>
         <img class="plan-image" src="/images/icon-advanced.svg"><br>
         <span>
             <span class="plan-title"><strong>Advanced</strong></span><br>
@@ -39,7 +39,7 @@
             <span class="free" hidden="{!yearly ? 'until-found' : ''}">2 months free</span>
         </span>
     </a>
-    <a class="plan {selected === 'pro' ? 'plan-selected' : ''}" id="pro" href="/static" on:click={() => selected = "pro"}>
+    <a class="plan {selected === 'pro' ? 'plan-selected' : ''}" id="pro" href="/" on:click={(e) => {e.preventDefault();  selected = "pro"}}>
         <img class="plan-image" src="/images/icon-pro.svg"><br>
         <span>
             <span class="plan-title"><strong>Pro</strong></span><br>
